@@ -8,9 +8,14 @@
   &emsp;&emsp;&emsp;&emsp;<b><i>3. Elements:</i></b> list of all elements of string format except special characters</br>
   &emsp;&emsp;&emsp;&emsp;<b><i>4. Constraints:</i></b> JSON Object contain constraint on each element that it should be random or choosen from a specific data set</br>
   &emsp;&emsp;&emsp;&emsp;<b><i>5. Data sets:</i></b> JSON Object contain all data lists from which format element should be choosen</br>
-
-
-</ul>
+  &emsp;&emsp;<b><i>Working:</i></b></br>
+  &emsp;&emsp;&emsp;&emsp;Create copy of the string format</br>
+  &emsp;&emsp;&emsp;&emsp;Then for each string element check constarints</br>
+  &emsp;&emsp;&emsp;&emsp;Then on basis of constraints generate value for that element</br>
+  &emsp;&emsp;&emsp;&emsp;And then replace that element with generated value</br>
+  &emsp;&emsp;&emsp;&emsp;Append that new generated string in output list</br>
+  &emsp;&emsp;&emsp;&emsp;At the end return that list</br>
+  
   
 
 <h2><i>choose_random.py</i></h2>
