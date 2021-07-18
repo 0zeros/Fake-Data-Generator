@@ -29,8 +29,8 @@
   
  <h2><i>test1.py</i></h2>
  
-  &emsp;&emsp;Test function which have specific parameters for email format. Call string_format_generator() by passing those parameters and print &emsp;&emsp;list of generated email id's returned by function.
+  &emsp;&emsp;Test function which have specific parameters for email format. Call string_format_generator() by passing those parameters and print list of generated email id's returned by function.
   
   <h2><i>test2.py</i></h2>
  
-  &emsp;&emsp;Test function which have specific parameters for name format. Call string_format_generator() by passing those parameters and print &emsp;&emsp;list of generated full names returned by function.
+  &emsp;&emsp;Test function which have specific parameters for name format. Call string_format_generator() by passing those parameters and print list of generated full names returned by function.
