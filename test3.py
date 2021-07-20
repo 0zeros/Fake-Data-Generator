@@ -1,4 +1,4 @@
-from number_format_generator import *
+from data_generator import *
 
 
 # will print all elements of list
@@ -8,12 +8,16 @@ def print_list(list_of_items):
 
 
 # set parameters to generate list of date
-format = "DD/MM/YYYY"
+format = "DD-MM-YYYY"
 
 element = ["DD","MM","YYYY"]
 
-constraints = {"DD": '{"range": [1,31] }',    "MM": '{"range": [1,12]}',    "YYYY": '{"length": "4"}'}
+constraints = {"DD": {"type": "integer", "range": [1, 31]},
+               "MM": {"type": "integer", "range": [1, 12]},
+               "YYYY": {"type": "integer", "length": "4"}
+               }
 
+data_sets = {}
 
 # call generator function and print the list which is returned by generator
-print_list(number_format_generator(100, format, element, constraints))
+print_list(data_generator(100, format, element, constraints,data_sets))

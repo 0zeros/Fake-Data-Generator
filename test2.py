@@ -1,4 +1,4 @@
-from string_format_generator import *
+from data_generator import *
 
 
 # will print all elements of list
@@ -11,7 +11,10 @@ format = "fname mname lname"
 
 element = ["fname","mname","lname"]
 
-constraints = {"fname": '{"choose": "fname list"}',    "mname": '{"choose": "mname list"}',    "lname": '{"choose": "lname list"}'}
+constraints = {"fname": {"type": "string", "choose": "fname list"},
+               "mname": {"type": "string", "choose": "mname list"},
+               "lname": {"type": "string", "choose": "lname list"}
+               }
 
 data_sets = {
     "fname list": ["Kenneth", "Daniel", "Richard"],
@@ -20,4 +23,4 @@ data_sets = {
 }
 
 # call generator function and print the list which is returned by generator
-print_list(string_format_generator(100, format, element, constraints, data_sets))
+print_list(data_generator(100, format, element, constraints, data_sets))
